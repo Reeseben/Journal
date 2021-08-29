@@ -12,6 +12,13 @@
 		7EDA1216259D233600BBD350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1214259D233600BBD350 /* Main.storyboard */; };
 		7EDA1218259D233700BBD350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1217259D233700BBD350 /* Assets.xcassets */; };
 		7EDA121B259D233700BBD350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1219259D233700BBD350 /* LaunchScreen.storyboard */; };
+		B57A49CF26A610EF00BDF1C7 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A49CE26A610EF00BDF1C7 /* Entry.swift */; };
+		B57A49D226A6116D00BDF1C7 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A49D126A6116D00BDF1C7 /* EntryController.swift */; };
+		B57A49D626A6147B00BDF1C7 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A49D526A6147B00BDF1C7 /* EntryListTableViewController.swift */; };
+		B57A49D826A6184900BDF1C7 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A49D726A6184900BDF1C7 /* EntryDetailViewController.swift */; };
+		B599FD3C26A76646005B6F76 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599FD3B26A76646005B6F76 /* Journal.swift */; };
+		B599FD3E26A766C9005B6F76 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599FD3D26A766C9005B6F76 /* JournalController.swift */; };
+		B599FD4026A76E50005B6F76 /* JournalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599FD3F26A76E50005B6F76 /* JournalListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		7EDA1217259D233700BBD350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EDA121A259D233700BBD350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDA121C259D233700BBD350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57A49CE26A610EF00BDF1C7 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		B57A49D126A6116D00BDF1C7 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		B57A49D526A6147B00BDF1C7 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		B57A49D726A6184900BDF1C7 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		B599FD3B26A76646005B6F76 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		B599FD3D26A766C9005B6F76 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		B599FD3F26A76E50005B6F76 /* JournalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 		7EDA120D259D233600BBD350 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				B57A49D326A6145900BDF1C7 /* Controllers */,
+				B57A49CD26A610E300BDF1C7 /* Models */,
 				7EDA1223259D234200BBD350 /* Resources */,
 				7EDA1227259D237600BBD350 /* Storyboards */,
 			);
@@ -78,6 +94,43 @@
 				7EDA1219259D233700BBD350 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B57A49CD26A610E300BDF1C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B57A49CE26A610EF00BDF1C7 /* Entry.swift */,
+				B599FD3B26A76646005B6F76 /* Journal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B57A49D026A6116000BDF1C7 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57A49D126A6116D00BDF1C7 /* EntryController.swift */,
+				B599FD3D26A766C9005B6F76 /* JournalController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B57A49D326A6145900BDF1C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57A49D026A6116000BDF1C7 /* ModelControllers */,
+				B57A49D426A6145D00BDF1C7 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B57A49D426A6145D00BDF1C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57A49D526A6147B00BDF1C7 /* EntryListTableViewController.swift */,
+				B57A49D726A6184900BDF1C7 /* EntryDetailViewController.swift */,
+				B599FD3F26A76E50005B6F76 /* JournalListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B599FD4026A76E50005B6F76 /* JournalListViewController.swift in Sources */,
+				B57A49CF26A610EF00BDF1C7 /* Entry.swift in Sources */,
+				B599FD3E26A766C9005B6F76 /* JournalController.swift in Sources */,
+				B57A49D626A6147B00BDF1C7 /* EntryListTableViewController.swift in Sources */,
 				7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */,
+				B57A49D226A6116D00BDF1C7 /* EntryController.swift in Sources */,
+				B57A49D826A6184900BDF1C7 /* EntryDetailViewController.swift in Sources */,
+				B599FD3C26A76646005B6F76 /* Journal.swift in Sources */,
 				7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
 				INFOPLIST_FILE = Journal/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
 				INFOPLIST_FILE = Journal/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
